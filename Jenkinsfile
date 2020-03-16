@@ -11,9 +11,11 @@ pipeline {
             steps {
                 sh 'go build'
             }
+       stage('Post'){
             steps{
                sh 'uptime'
             }
+          }
         }
     }
 }
