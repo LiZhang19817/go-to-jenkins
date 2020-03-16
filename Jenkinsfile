@@ -11,6 +11,9 @@ pipeline {
             steps {
                 sh 'go build'
             }
+            steps{
+               sh 'uptime'
+            }
         }
     }
 }
